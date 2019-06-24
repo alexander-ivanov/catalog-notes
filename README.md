@@ -4,6 +4,8 @@ Some lab tests need several specimens. Sometimes only several specimens can be s
 
 PlanDefinition resource supports groups of ActivityDefinitions to be performed and selectionBehaviour for them. Here are some examples:
 
+![AndGroup](/assets/PlanDefinitionForLabOrders-AndGroup.png)
+
 Logical "and" expressed by ```"selectionBehavior": "all"```
 
 ```json
@@ -36,6 +38,8 @@ Logical "and" expressed by ```"selectionBehavior": "all"```
 
 Logical "or" can be expressed in several ways. Usually we want users to choose "exactly one" specimen - ```"selectionBehavior": "exactly-one"```.
 
+![OrGroup](/assets/PlanDefinitionForLabOrders-OrGroup.png)
+
 ```json
 {
   "resourceType": "PlanDefinition",
@@ -65,6 +69,8 @@ Logical "or" can be expressed in several ways. Usually we want users to choose "
 ```
 
 PlanDefinition support group nesting so here is example:
+
+![OrGroup](/assets/PlanDefinitionForLabOrders-ComplexExpressionGroup.png)
 
 ```json
 {
