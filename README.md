@@ -108,3 +108,5 @@ PlanDefinition support group nesting so here is example:
   ]
 }
 ```
+
+To use this approach ActivityDefinition should be atomic and represent a specific lab test, not a panel. During our tests, we have found out that it becomes harder to encode catalog but easier to describe an automatic algorithm of specimen's containers merges.
